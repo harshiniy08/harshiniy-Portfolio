@@ -33,12 +33,7 @@ function Navbar() {
           <li><a href="#contact">Contact</a></li>
         </ul>
         
-      <div className="about-container">
-        <div className="about-image">
-          <img src="../harshini.jpeg" alt="Harshini Y" />
-          <h3>Harshini Y</h3>
-        </div>
-      </div>  
+       
 
         <button
           className="theme-toggle"

@@ -11,35 +11,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.about-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
-}
 
-.about-image {
-  text-align: center;
-}
-
-.about-image img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #1b4f72;
-  transition: transform 0.3s ease;
-}
-
-.about-image img:hover {
-  transform: scale(1.05);
-}
-
-.about-image h3 {
-  margin-top: 15px;
-  color: #1b4f72;
-}
 .logo {
   color: white;
   font-size: 28px;

@@ -8,6 +8,12 @@ function Hero() {
     if (hour < 17) return "Good Afternoon";
     return "Good Evening";
   };
+  <div className="about-container">
+        <div className="about-image">
+          <img src="../harshini.jpeg" alt="Harshini Y" />
+          <h3>Harshini Y</h3>
+        </div>
+      </div> 
 
   return (
     <section id="hero" className="hero-section">
