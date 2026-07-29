@@ -1,5 +1,5 @@
 .hero-section {
-  
+  text-size:"100 px" ;
   display: flex;
   align-items: center;
   padding: 50px 10%;
@@ -24,6 +24,7 @@
 }
 .hero-image:hover{
   border: #F18F01;
+  transform: translateY(-8px);
 }
 .hero-content {
   max-width: 650px;
