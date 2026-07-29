@@ -26,9 +26,8 @@ function Hero() {
           </h2>
 
           <p>
-            B.Tech AIML Student at MSRUAS passionate about Web
-            Development, Artificial Intelligence and creating
-            innovative solutions.
+            B.Tech AIML Student /  Web
+            Developer/ Passionate Tech enthusiast
           </p>
 
           <div className="hero-buttons">
