@@ -1,0 +1,92 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background: #1b4f72;
+  padding: 18px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f18f01;
+}
+
+.theme-toggle,
+.menu-toggle {
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #1b4f72;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+}
+
+/* Dark Mode */
+body[data-theme="dark"] {
+  background: #121212;
+  color: white;
+}
+
+body[data-theme="dark"] .navbar {
+  background: #1a1a1a;
+}
+
+body[data-theme="dark"] .logo,
+body[data-theme="dark"] .nav-links a {
+  color: white;
+}
+
+body[data-theme="dark"] .nav-links a:hover {
+  color: #f18f01;
+}

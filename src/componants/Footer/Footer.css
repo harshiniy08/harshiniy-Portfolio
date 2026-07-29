@@ -1,0 +1,30 @@
+.site-footer {
+  background: #1b4f72;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #f18f01;
+}
+
+body[data-theme="dark"] .site-footer {
+  background: #1a1a1a;
+}
