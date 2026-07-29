@@ -9,6 +9,7 @@ function Hero() {
 
     return "Good Evening";
   };
+  
 
   return (
     <section id="hero" className="hero-section">
