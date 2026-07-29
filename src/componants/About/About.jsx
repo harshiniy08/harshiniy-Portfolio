@@ -6,11 +6,6 @@ function About() {
     <section id="about" className="about-section">
       <h2>About Me</h2>
 
-      <div className="about-container">
-        <div className="about-image">
-          <img src="../harshini.jpeg" alt="Harshini Y" />
-          <h3>Harshini Y</h3>
-        </div>
 
         <div className="about-content">
           <p>
@@ -32,7 +27,7 @@ function About() {
             technology.
           </p>
         </div>
-      </div>
+      
     </section>
   );
 }
