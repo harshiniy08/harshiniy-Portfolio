@@ -24,7 +24,7 @@ if(heroTitle){
           <h1>{getGreeting()}, Welcome to My Portfolio</h1>
 
           <h2>
-            Hi, I'm <span className="highlight">Harshini Y</span>
+            I'm <span className="highlight">Harshini Y</span>
           </h2>
 
           <p>
