@@ -116,7 +116,7 @@
 /* DARK MODE */
 
 body[data-theme="dark"] .hero-section {
-  background: linear-gradient(135deg, #111827, #1f2937);
+  background: linear-gradient(135deg, #7a808d, #22416d);
 }
 
 body[data-theme="dark"] .hero-content h1,
