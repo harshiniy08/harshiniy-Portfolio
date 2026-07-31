@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   padding: 80px 8%;
-  background: linear-gradient(135deg, rgb(1, 1, 44), #0f2c3f);
+  background: linear-gradient(135deg, rgb(1, 1, 44), rgb(107, 112, 170));
   transition: all 0.3s ease;
 }
 .hero-container {
