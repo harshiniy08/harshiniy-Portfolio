@@ -32,7 +32,7 @@
 
 .hero-content h1 {
   color: white;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 15px;
 }
 
@@ -69,11 +69,18 @@
   background: #1B4F72;
   color: white;
 }
+.btn-primary:hover {
+ background: #d97706;
+}
 
 .btn-secondary {
   background:#1B4F72 ;
   color: white;
 }
+.btn-secondary:hover {
+ background: #d97706;
+}
+
 
 @media (max-width: 768px) {
   .hero-container {

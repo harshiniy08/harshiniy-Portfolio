@@ -4,11 +4,14 @@ function Hero() {
   const getGreeting = () => {
     const hour = new Date().getHours();
 
-    <h1>if (hour < 12) return "Good Morning";
+    if (hour < 12) return "Good Morning";
     if (hour < 17) return "Good Afternoon";
-    return "Good Evening";</h1>
+    return "Good Evening";
   };
-  
+  const heroTitle =document.querySelector(`.hero-section h1`);
+if(heroTitle){
+    heroTitle.textContent =`${getgreeting()}, Welcome to my portfolio`;
+}
 
   return (
     <section id="hero" className="hero-section">
