@@ -51,7 +51,7 @@
 }
 
 .highlight {
-  color: #ca430d;
+  color: #923510;
   font-weight: 700;
 }
 
@@ -70,8 +70,9 @@
 }
 
 .btn-primary {
-  background: #f18f01;
+  background: transparent;
   color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .btn-primary:hover {
