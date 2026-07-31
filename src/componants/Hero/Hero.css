@@ -109,3 +109,29 @@
  body[data-theme="dark"].hero-section{
         background: linear-gradient(135deg #111827,#1f2937);
      }
+      body[data-theme="dark"].highlight{
+        color: #F18F01;
+     }
+     body[data-theme="dark"] .theme-toggle {
+    background: #333333;
+    color: #ffffff;
+    border: 1px solid #666666;
+}
+body[data-theme="dark"] .btn-primary {
+    background: #F18F01;
+    color: #ffffff;
+}
+ 
+body[data-theme="dark"] .btn-secondary {
+    background:#F18F01;
+    color: #ffffff;
+}
+body[data-theme="dark"] .btn-primary:hover {
+    background: #ffffff;
+    color: #121212;
+}
+ 
+body[data-theme="dark"] .btn-secondary:hover {
+    background: #ffffff;
+    color: #121212;
+}
