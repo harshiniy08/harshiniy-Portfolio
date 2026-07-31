@@ -146,12 +146,12 @@ body[data-theme="dark"] .btn-primary:hover {
 }
 
 body[data-theme="dark"] .btn-secondary {
-  border: 2px solid #f18f01;
-  color: #f18f01;
+  background: #f18f01;
+  color: #ffffff;
 }
 
 body[data-theme="dark"] .btn-secondary:hover {
-  background: #f18f01;
+  background: #ffffff;
   color: #111827;
 }
 
