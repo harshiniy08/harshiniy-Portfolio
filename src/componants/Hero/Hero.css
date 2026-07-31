@@ -106,3 +106,6 @@
     justify-content: center;
   }
 }
+ body[data-theme="dark"].hero-section{
+        background: linear-gradient(135deg #111827,#1f2937);
+     }
