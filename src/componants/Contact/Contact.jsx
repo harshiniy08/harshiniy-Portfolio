@@ -89,7 +89,7 @@ function Contact() {
           ></textarea>
         </div>
 
-        <button type="submit" className="btn-primary">
+        <button type="submit" className="btn-prime">
           {submitted ? "✅ Message Sent" : "Send Message"}
         </button>
       </form>
