@@ -1,88 +1,168 @@
 .hero-section {
-  font-size:"50 px" ;
+  min-height: 90vh;
   display: flex;
   align-items: center;
-  padding: 50px 10%;
-  background: rgb(56, 109, 187);
+  padding: 80px 8%;
+  background: linear-gradient(135deg, #386dbb, #1b4f72);
+  transition: all 0.3s ease;
 }
 
 .hero-container {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 80px;
-  width: 100%;
+}
+
+.hero-image {
+  flex-shrink: 0;
 }
 
 .hero-image img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
+  width: 320px;
+  height: 320px;
   object-fit: cover;
-  border: 6px solid white;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
-.hero-image:hover{
-  border: #F18F01;
-  transform: translateY(-8px);
-}
+
 .hero-content {
   max-width: 650px;
 }
 
 .hero-content h1 {
-  color: white;
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #ffffff;
   margin-bottom: 15px;
+  line-height: 1.2;
 }
 
 .hero-content h2 {
-  color: white;
   font-size: 2rem;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero-content p {
-  color: #e8e8e8;
   font-size: 1.1rem;
+  color: #e5e7eb;
   line-height: 1.8;
   margin-bottom: 30px;
 }
 
 .highlight {
-  color: #F18F01;
+  color: #f18f01;
+  font-weight: 700;
 }
 
 .hero-buttons {
   display: flex;
-  gap: 5px;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 .btn {
+  text-decoration: none;
   padding: 12px 24px;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: 600;
+  transition: 0.3s;
 }
 
 .btn-primary {
-  background: #1B4F72;
-  color: white;
+  background: #f18f01;
+  color: #ffffff;
 }
+
 .btn-primary:hover {
- background: #d97706;
+  background: #ffffff;
+  color: #1b4f72;
 }
 
 .btn-secondary {
-  background:#1B4F72 ;
-  color: white;
-}
-.btn-secondary:hover {
- background: #d97706;
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
 }
 
+.btn-secondary:hover {
+  background: #ffffff;
+  color: #1b4f72;
+}
+
+/* Animation */
+
+.hero-content h1,
+.hero-content h2,
+.hero-content p,
+.hero-buttons {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* DARK MODE */
+
+body[data-theme="dark"] .hero-section {
+  background: linear-gradient(135deg, #111827, #1f2937);
+}
+
+body[data-theme="dark"] .hero-content h1,
+body[data-theme="dark"] .hero-content h2 {
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .hero-content p {
+  color: #d1d5db;
+}
+
+body[data-theme="dark"] .highlight {
+  color: #f18f01;
+}
+
+body[data-theme="dark"] .hero-image img {
+  border-color: #f18f01;
+}
+
+body[data-theme="dark"] .btn-primary {
+  background: #f18f01;
+  color: #ffffff;
+}
+
+body[data-theme="dark"] .btn-primary:hover {
+  background: #ffffff;
+  color: #111827;
+}
+
+body[data-theme="dark"] .btn-secondary {
+  border: 2px solid #f18f01;
+  color: #f18f01;
+}
+
+body[data-theme="dark"] .btn-secondary:hover {
+  background: #f18f01;
+  color: #111827;
+}
+
+/* MOBILE */
 
 @media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 5%;
+  }
+
   .hero-container {
     flex-direction: column;
     text-align: center;
@@ -105,33 +185,4 @@
   .hero-buttons {
     justify-content: center;
   }
-}
- body[data-theme="dark"].hero-section{
-        background: linear-gradient(135deg #111827,#1f2937);
-     }
-      body[data-theme="dark"].highlight{
-        color: #F18F01;
-     }
-     body[data-theme="dark"] .theme-toggle {
-    background: #333333;
-    color: #ffffff;
-    border: 1px solid #666666;
-}
-body[data-theme="dark"] .btn-primary {
-    background: #F18F01;
-    color: #ffffff;
-}
- 
-body[data-theme="dark"] .btn-secondary {
-    background:#F18F01;
-    color: #ffffff;
-}
-body[data-theme="dark"] .btn-primary:hover {
-    background: #ffffff;
-    color: #121212;
-}
- 
-body[data-theme="dark"] .btn-secondary:hover {
-    background: #ffffff;
-    color: #121212;
 }
